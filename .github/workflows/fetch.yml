@@ -1,8 +1,11 @@
 name: Fetch Appstore Info 
 
 on:
- schedule:
-     - cron: "0/15 * * * *" 
+#  schedule:
+#      - cron: "0/15 * * * *" 
+  push:
+    branches: 
+      - master
 
 jobs:
   build:
